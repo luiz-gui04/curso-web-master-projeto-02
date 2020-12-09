@@ -64,7 +64,7 @@ section.cover-form {
   right: 30px;
   top: -2.5%;
   box-shadow: 1px 1px 2px 1px rgb(180, 180, 180);
-  background-color: white;
+  background-color: rgba(200, 200, 200, 0.7);
 }
 
 .form-container h2 {
@@ -140,6 +140,54 @@ section.chamada p {
   padding-top: 10px;
   font-size: 18px;
   font-weight: lighter;
+}
+
+.flex-mosaico {
+  display: flex;
+}
+
+.item-1-mosaico {
+  background-position: center;
+  background-size: cover;
+  width: 60%;
+}
+
+.item-2-mosaico {
+  background-color: #4683ab;
+  padding: 60px 40px;
+  width: 40%;
+}
+
+.item-2-mosaico p {
+  color: white;
+}
+
+footer {
+  text-align: center;
+  padding: 20px 0;
+}
+footer p {
+  margin-top: 8px;
+}
+
+footer img {
+  width: 120px;
+}
+
+@media screen and (max-width: 768px) {
+  .flex-mosaico {
+    display: block;
+  }
+
+  .item-1-mosaico {
+    padding-top: 80%;
+    width: 100%;
+  }
+
+  .item-2-mosaico {
+    text-align: justify;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 960px) {
